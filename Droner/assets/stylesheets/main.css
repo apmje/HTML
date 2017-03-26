@@ -1,0 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-color: #271E36;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*
+  ========================================
+  Layout
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+    padding: 15px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -4px;
+  }
+
+.container {
+    max-width: 99%;
+    margin: 22px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+.logo {
+    font-size: 82px;
+    font-family: 'Suez One', serif;
+    color: #3F3A46;
+    position: absolute;
+    margin-top: 20px;
+    padding-left: 100px;
+}
+
+h2 {
+  color: #FFF;
+  font-family: "Lato";
+  font-size: 46px;
+}
+
+small {
+  color: #FFF;
+  font-family: "Lato";
+  font-size: 12px;
+}
+
+
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+    margin-right: -4px;
+    font-family: "Lato";
+}
+
+.nav a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  }
+
+.top-nav a:hover {
+  border-top: 8px solid #fff;
+}
+
+.nav a:hover {
+  padding-top: 50px;
+  text-decoration: overline;
+  box-shadow: 40px #3F3A46;
+}
+
+.top-nav li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+
+}
+
+.top-nav {
+    text-align: right;
+    margin-right: 5px;
+    padding-top: 52px;
+}
+
+.bottom-nav {
+    text-align: left;
+}
+
+.bottom-nav li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/*
+  ========================================
+  Banner
+  ========================================
+*/
+
+.banner {
+    height: 550px;
+    border-radius: 5px 5px 0 0;
+    background-image: url(https://static.pexels.com/photos/355084/pexels-photo-355084.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 22px;
+}
+
+.banner h2 {
+  margin-top: 150px;
+  vertical-align: middle;
+}
+
+/*
+  ========================================
+  Content
+  ========================================
+*/
+
+.content {
+
+  height: 200px;
+}
+
+
+.content h4 {
+  color: #fff;
+  font-size: 32px;
+  font-family: "Lato";
+
+}
+
+.content img {
+    max-width: 70px;
+    padding-top: 40px;
+}
+
+
+.stylish {
+  background-color: #fff;
+  background-image: url(https://static.pexels.com/photos/340981/pexels-photo-340981.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.responsive {
+  background-color: #fff;
+  background-image: url(https://static.pexels.com/photos/90807/pexels-photo-90807.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.comp {
+  background-color: #fff;
+  background-image: url(https://static.pexels.com/photos/185545/pexels-photo-185545.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom-right-radius: 5px;
+}
+
+.colla {
+  background-color: #fff;
+  background-image: url(https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 5px;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+footer {
+  height: 100px;
+  vertical-align: top;
+}
+
+.social img {
+    max-width: 30px;
+}
+
+.social img:hover {
+    opacity: 0.5;
+}
