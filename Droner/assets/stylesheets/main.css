@@ -42,6 +42,7 @@ table {
 }
 
 
+
 /*
   ========================================
   Layout
@@ -197,7 +198,7 @@ small {
     text-align: right;
     margin-right: 5px;
     padding-top: 52px;
-}
+    }
 
 .bottom-nav {
     text-align: left;
@@ -220,14 +221,15 @@ small {
     font-family: 'Suez One', serif;
     color: #3F3A46;
     position: absolute;
-    margin-top: 20px;
     padding-left: 100px;
+    margin-top: 30px;
+
 }
 
 .banner {
     height: 550px;
     border-radius: 5px 5px 0 0;
-    background-image: url(https://static.pexels.com/photos/355084/pexels-photo-355084.jpeg);
+    background-image: url(../images/banner.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -281,19 +283,19 @@ small {
 }
 
 .stylish {
-  background-image: url(https://static.pexels.com/photos/340981/pexels-photo-340981.jpeg);
+  background-image: url(../images/staircase.jpg);
 }
 
 .responsive {
-  background-image: url(https://static.pexels.com/photos/90807/pexels-photo-90807.jpeg);
+  background-image: url(../images/responsivecode.jpg);
 }
 .comp {
-  background-image: url(https://static.pexels.com/photos/185545/pexels-photo-185545.jpeg);
+  background-image: url(../images/engine.jpg);
   border-bottom-right-radius: 5px;
 }
 
 .colla {
-  background-image: url(https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg);
+  background-image: url(../images/coffee-meeting.jpg);
   border-bottom-left-radius: 5px;
 }
 
@@ -314,4 +316,22 @@ footer {
 
 .social img:hover {
     opacity: 0.5;
+}
+
+@media (max-width: 800px) {
+
+  .logo,
+  .top-nav {
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    position: relative;
+  }
+
+  .top-nav {
+    text-align: center;
+
+    }
+
 }
