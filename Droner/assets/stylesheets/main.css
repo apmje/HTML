@@ -143,15 +143,6 @@ a {
   ========================================
 */
 
-.logo {
-    font-size: 82px;
-    font-family: 'Suez One', serif;
-    color: #3F3A46;
-    position: absolute;
-    margin-top: 20px;
-    padding-left: 100px;
-}
-
 h2 {
   color: #FFF;
   font-family: "Lato";
@@ -220,9 +211,18 @@ small {
 
 /*
   ========================================
-  Banner
+  Header
   ========================================
 */
+
+.logo {
+    font-size: 82px;
+    font-family: 'Suez One', serif;
+    color: #3F3A46;
+    position: absolute;
+    margin-top: 20px;
+    padding-left: 100px;
+}
 
 .banner {
     height: 550px;
@@ -231,14 +231,19 @@ small {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 22px;
-}
+  }
 
 .banner h2 {
   margin-top: 150px;
   vertical-align: middle;
 }
 
+.breaker {
+  padding: 10px;
+}
+.breaker img {
+  width: 12px;
+}
 /*
   ========================================
   Content
@@ -253,7 +258,7 @@ small {
 
 .content h4 {
   color: #fff;
-  font-size: 32px;
+  font-size: 28px;
   font-family: "Lato";
 
 }
@@ -264,37 +269,31 @@ small {
 }
 
 
-.stylish {
+.stylish,
+.responsive,
+.comp,
+.colla {
   background-color: #fff;
-  background-image: url(https://static.pexels.com/photos/340981/pexels-photo-340981.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
+}
+
+.stylish {
+  background-image: url(https://static.pexels.com/photos/340981/pexels-photo-340981.jpeg);
 }
 
 .responsive {
-  background-color: #fff;
   background-image: url(https://static.pexels.com/photos/90807/pexels-photo-90807.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .comp {
-  background-color: #fff;
   background-image: url(https://static.pexels.com/photos/185545/pexels-photo-185545.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   border-bottom-right-radius: 5px;
 }
 
 .colla {
-  background-color: #fff;
   background-image: url(https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   border-bottom-left-radius: 5px;
 }
 
