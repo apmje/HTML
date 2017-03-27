@@ -175,7 +175,7 @@ small {
 blockquote {
     color: #fff;
     display: block;
-
+    font-family: "Lato";
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -322,7 +322,6 @@ blockquote {
 
 .testimonials blockquote {
   text-align: right;
-
 }
 
 .testimonials img {
