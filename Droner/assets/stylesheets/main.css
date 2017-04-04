@@ -114,7 +114,7 @@ table {
 
 .container {
     max-width: 99%;
-    margin: 22px;
+    padding: 0;
     margin: 0 auto;
     text-align: center;
 }
@@ -129,11 +129,6 @@ table {
   z-index: 100;
 }
 
-.push {
-  padding-bottom: 70px;
-}
-
-
 
 /*
   ========================================
@@ -147,40 +142,44 @@ a {
 }
 
 
-
 /*
   ========================================
   Typography
   ========================================
 */
 
+h2,
+h3,
+h4,
+small {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
 h2 {
-  color: #FFF;
-  font-family: "Lato";
   font-size: 46px;
+  letter-spacing: 4px;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 }
 
 h4 {
-  color: #fff;
-  font-size: 28px;
-  font-family: "Lato";
+  font-size: 1.75em;
+  letter-spacing: 0.1rem;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 }
 
 small {
-  color: #FFF;
   font-family: "Lato";
-  font-size: 12px;
+  font-size: 0.75em;
 }
-
-blockquote {
-    color: #fff;
-    display: block;
-    font-family: "Lato";
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-
 
 /*
   ========================================
@@ -189,17 +188,13 @@ blockquote {
 */
 
 .nav {
-    margin-right: -4px;
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
 }
 
-.nav a {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: .5px;
-  text-transform: uppercase;
-}
 
 .nav a:hover {
     padding-top: 50px;
@@ -240,28 +235,40 @@ blockquote {
 */
 
 .logo {
-    font-size: 82px;
+    font-size: 5.125em;
     font-family: 'Suez One', serif;
     position: absolute;
     padding-left: 100px;
     margin-top: 30px;
+    text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 
 }
 
 .banner {
-    height: 550px;
-    top: 0;
-    left: 0;
-    right: 0;
+    height: 850px;
     border-radius: 5px 5px 0 0;
     background-image: url(../images/banner.jpg);
-    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     }
 
 .banner h2 {
+  margin-top: 400px;
+  text-align: center;
+}
+
+.banner-btn {
+  width: 200px;
+  height: 50px;
+  background-color: rgba(39,30,54, 0.8);
+  color: #fff;
   margin-top: 150px;
-  vertical-align: middle;
+  border: 2px solid #fff;
 }
 
 .breaker {
@@ -313,32 +320,6 @@ blockquote {
   border-bottom-left-radius: 5px;
 }
 
-.testimonials {
-  max-width: 40%;
-  background-color: #89868f;
-  border-radius: 20px;
-  opacity: 1;
-}
-
-.testimonials blockquote {
-  text-align: right;
-}
-
-.testimonials img {
-  max-width: 200px;
-  height: 200px;
-  vertical-align: top;
-  margin-top: -75px;
-  border: 1px solid #dfe2e5;
-  border-radius: 50%;
-}
-
-/*
-.testimonials:hover {
-  opacity: 1;
-  transition: opacity 3s;
-}
-*/
 /*
   ========================================
   Footer
@@ -348,6 +329,10 @@ blockquote {
 footer {
   height: 100px;
   vertical-align: top;
+}
+
+.social {
+  text-align: right;
 }
 
 .social img {
