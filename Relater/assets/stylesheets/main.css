@@ -11,6 +11,7 @@
           box-sizing: border-box;
 }
 
+
 /*
  * Remove list styles.
  */
@@ -23,7 +24,7 @@ ol {
 }
 
 a {
-  color: #d3d3d3;
+  color: #262f34;
   text-decoration: none;
 }
 
@@ -34,13 +35,13 @@ img {
 body {
 	font-family: "Lato", sans-serif;
 	line-height: 1.6;
-	color: #d3d3d3;
+	color: #262f34;
 	margin: 0;
-  background-color: #271E36;
+  background-color: #f1d3bc;
 }
 
 h2 {
-  font-size: .8em;
+  font-size: 1em;
 }
 
 
@@ -52,10 +53,10 @@ h2 {
    position: fixed;
    z-index: 1000;
    width: 100%;
-   background-color: #271E36;
+   background-color: #615049;
    text-align: center;
    text-transform: uppercase;
-   box-shadow: 0 8px 6px -10px #000;
+   box-shadow: 0 8px 6px -10px #f34a4a;
  }
 
  .main-nav ul {
@@ -67,9 +68,8 @@ h2 {
    flex: 1;
    margin-right: 1px;
    margin-left: 1px;
-   border-top: 4px solid #d3d3d3;
+   border-top: 4px solid #f34a4a;
  }
-
 
  .main-nav a {
    display: block;
@@ -78,11 +78,12 @@ h2 {
 
  #logo {
    font-family: "Suez One", sans-serif;
-   font-size: 3em;
-   margin: 0;
+   font-size: 4em;
    text-align: center;
-   color: #fff;
-   padding-top: 10%;
+   color: #f34a4a;
+   margin: 0;
+   padding-top: 1.6rem;
+
  }
 
  /*
@@ -92,14 +93,128 @@ h2 {
 .banner {
   height: 250px;
   border-radius: 5px 5px 0 0;
-  background-image: url(../images/banner.jpg);
+  background-image: url(../images/jakob-owens-224350.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  margin-top: -3rem;
 }
 
 .tagline {
+    padding-top: 2em;
     margin: 0;
-    padding-top: 75px;
+    color: #ffffff;
+    }
+
+/*
+ * Content
+ */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
+
+.main-content1,
+.main-content2,
+.main-content3,
+.main-content4 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 6em;
+}
+
+
+.main-content1 {
+    background-image: url(../images/rodion-kutsaev-41022.jpg);
+}
+.main-content2 {
+    background-image: url(../images/edho-pratama-149011.jpg);
+}
+.main-content3 {
+    background-image: url(../images/sai-kiran-anagani-61187.jpg);
+}
+.main-content4 {
+    background-image: url(../images/helloquence-61189.jpg);
+}
+
+
+.main-content img {
+  width: 3em;
+  position: absolute;
+  top: -20px;
+  right: 15px;
+  padding: 0;
+}
+
+.main-content h3 {
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 1rem;
+  margin: 0;
+}
+
+.main-content1,
+.main-content3 h3 {
+  color: #f8f1e5;
+}
+
+.main-content2,
+.main-content4 h3 {
+  color: #262f34;
+}
+
+.main-content p {
+  padding-bottom: 1rem;
+}
+
+/*
+ * Page Breaker
+ */
+
+ .breaker {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin: .3em 0;
+ }
+
+ .breaker img {
+   user-select: none;
+   width: 0.5em;
+   align-self: center;
+   flex: 0 0 auto;
+   margin-right: .1em;
+   opacity: 0.2;
+ }
+
+/*
+ * Footer
+ */
+
+.main-footer {
+  background-color: #615049;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1em 0;
+}
+
+.social img {
+  width: 2em;
+  margin-right: 0.5em;
+  align-self: center;
+  flex: 0 0 auto;
+}
+
+ .footer-nav {
+   display: none;
+ }
