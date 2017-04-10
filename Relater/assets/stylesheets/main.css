@@ -102,9 +102,10 @@ h2 {
 }
 
 .tagline {
-    padding-top: 2em;
+    padding-top: 4em;
     margin: 0;
     color: #ffffff;
+    letter-spacing: 0.3em;
     }
 
 /*
@@ -205,7 +206,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 1em 0;
+  padding-top: 1em;
 }
 
 .social img {
